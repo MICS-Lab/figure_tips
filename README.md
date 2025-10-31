@@ -12,8 +12,8 @@ When possible, your figures should be:
 - **Editable**: you can directly edit the text of the figures, e.g., using a tool such as *Adobe Illustrator*. Note that a text can be vectorized but not editable, if the text is defined as a contour shape (default in matplotlib).
 
 Sometimes, using a vector format can lead to a very heavy plot (e.g., a scatter plot with millions of points). In that case, your Figure should be:
-- **Rasterized**: a "usual" image as a grid of pixels. The resolution (i.e., the DPI) should be sufficient. For some journals, 300 DPI is mandatory.
-- **Vectorized legend**: although the main plot is rasterized, you can keep legends/labels vectorized and editable. ***[See code snippets below]***
+- **Rasterized**: a "usual" image as a grid of pixels. The resolution (i.e., the DPI) should be sufficient. For some journals, **300 DPI** is mandatory.
+- **Vectorized legend**: although the main plot is rasterized, you can keep legends/labels vectorized and editable. It's possible to save a PDF with a mixed format (raster and vector). ***[See code snippets below]***
 
 ## Styling guidelines
 
@@ -94,7 +94,7 @@ fig, ax = plt.subplots(figsize=(4, 3))
 
 ## Example
 
-In this example, we show how to improve a dummy plot via (i) changing the size of the plot, (ii) moving the legend location, and (iii) removing the borders/spines.
+In this example, we show how to improve a dummy plot via (i) changing the size of the plot, (ii) moving the legend location, and (iii) removing the borders/spines. The plot becomes more readable. ***[See Python code below]***
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/MICS-Lab/figure_tips/refs/heads/main/example.png" alt="tips_example" width="100%"/>
